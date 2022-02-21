@@ -13,5 +13,6 @@ public class Operation01 {
 		 * System.out.println(score++); 는
 		 * System.out.println(++score); 라는 말이다
 		 */
+		System.out.println(score);
 	}
 }
