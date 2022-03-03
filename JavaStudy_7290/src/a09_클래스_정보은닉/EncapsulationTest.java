@@ -1,4 +1,4 @@
-package a10_클래스_정보은닉;
+package a09_클래스_정보은닉;
 
 public class EncapsulationTest {
 

@@ -31,7 +31,11 @@ public class CarTest {
 
 	public static void main(String[] args) {
 		
-		Car c1 = new Car();
+		Car c1 = new Car(); // Car 는 클래스다/ 클래스 변수; 이건 변수에 주소값 저장하는거
+		Car c3; //변수 선언(Car 참조 자료형) ***참조자료형은 주소값이다*** 즉 c1 c3 안에는 주소값만 들어있다
+		c3 = new Car(); //Car 객체 생성 >> 힙 메모리 영역에 Car 클래스 사이즈 만큼 메모리를 빌려 할당하는 것
+//		c3. 점 찍으면 주소를 찾아가서 그 안에 들어있는 변수, 메소드에 접근할수 있다
+		
 		c1.company = "KIA";
 		c1.model = "K5";
 		c1.oil = 5;

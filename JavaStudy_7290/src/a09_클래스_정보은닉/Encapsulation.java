@@ -1,4 +1,6 @@
-package a10_클래스_정보은닉;
+package a09_클래스_정보은닉;
+
+//캡슐화 - 내용을 보호막으로 씌워 보호하는데, 보호막=메소드 이다
 
 public class Encapsulation {
 	private String username; //아이디
@@ -28,6 +30,23 @@ public class Encapsulation {
 		return username;
 	}
 	
+	
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getProvider() {
+		return provider;
+	}
+
+	public void setProvider(String provider) {
+		this.provider = provider;
+	}
 
 	public void showInfo() {
 		System.out.println(username);

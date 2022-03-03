@@ -51,8 +51,10 @@ public class Student {
 	
 //	<오버로딩>
 	public Student(String schoolName, int studentYear, int studentGroup, int studentNumber, String studentName,
-			String studentAddress, String studentPhone, boolean graduationFlag) {
-		//super(); // 지워도 된다
+			String studentAddress, String studentPhone, boolean graduationFlag) { 
+//			String - 참조 자료형(클래스 이기도 하다)  /  나머지 노란 글자들 int boolean 등등은 기본 자료형
+		
+		//super(); // 지워도 된다(자동생성)
 		this(); // 기본생성자를 호출하는 키워드
 		this.schoolName = schoolName;
 		this.studentYear = studentYear;

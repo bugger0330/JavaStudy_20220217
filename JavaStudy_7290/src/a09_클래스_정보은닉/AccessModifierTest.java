@@ -1,4 +1,4 @@
-package a10_클래스_정보은닉;
+package a09_클래스_정보은닉;
 
 import a09_클래스.Student;  // 패키지가 다르면 임폴트를 꼭 해야 한다
 
