@@ -60,7 +60,7 @@ public class PageController {
 						//user객체.showUser()메소드를 호출할 수 없기 때문에 continue로 넘기는것
 						continue;//밑에꺼 실행하지 마라
 					}
-					users[i].showUser();//해당 배열에 user객체가 존재하기 떄문에 user정보를 출력
+					System.out.println(users[i]);//해당 배열에 user객체가 존재하기 떄문에 user정보를 출력
 				}
 				
 				
@@ -68,7 +68,13 @@ public class PageController {
 				String username = input.typedUsername(scanner);
 				///////////// 이게 실행 되도록
 				User user = userService.getUser(username);
-				user.showUser();
+				
+				if(user == null) {
+					System.out.println("해당 아이디로 회원 정보를 조회할 수 없습니다");
+				}else {
+					System.out.println(user);
+				}
+				
 				//////////////////////////////
 			}else if(select == 'b') {
 				System.out.println("메인 메뉴로 이동");
