@@ -3,6 +3,7 @@ package a13_인터페이스2.controller;
 import java.util.Scanner;
 
 import a13_인터페이스2.model.User;
+import a13_인터페이스2.service.AccountService;
 import a13_인터페이스2.service.UserService;
 import a13_인터페이스2.view.Index;
 import a13_인터페이스2.view.IndexImpl;
@@ -14,11 +15,13 @@ public class PageController {
 	
 	private final Input input;
 	private final UserService userService;
+	private final AccountService accountService;
 
-	public PageController(Input input, UserService userService) {
+	public PageController(Input input, UserService userService, AccountService accountService) {
 		
 		this.input = input;
 		this.userService = userService;
+		this.accountService = accountService;
 	}
 	
 	public void index() {
@@ -32,6 +35,10 @@ public class PageController {
 			if(select == '1') { //회원가입
 				User user = input.typedUser(scanner); // user객체 생성 및 객체 데이터 삽입
 				userService.addUser(user); // user 추가
+				
+				System.out.println("=======================================");
+				accountService.printfUserProfile();
+				
 				
 			}else if(select == '2') { // 회원조회
 				selectGetUser();
