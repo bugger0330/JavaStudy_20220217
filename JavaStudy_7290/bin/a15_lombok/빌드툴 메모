@@ -14,7 +14,24 @@ Maven
 롬복-라이브러리
 
 
+롬복 다운받고
+https://projectlombok.org/
 
+C:\junil\kangmin\sts-4.12.0.RELEASE 경로에 옯기고 cmd에서 실행 또는 더블클릭
+실행해서 설치완료
+
+https://mvnrepository.com/
+lombok검색하면
+https://mvnrepository.com/artifact/org.projectlombok/lombok
+https://mvnrepository.com/artifact/org.projectlombok/lombok/1.18.22
+
+
+pom.xml에서
+</build>
+
+</project>
+사이에서 컨트롤 스페이스 하면 <dependencies> 가 있는데 이거 선택후
+그 안에 메이븐 내용을 붙여넣고 저장 하면 자동으로 롬복이 라이브러리에 추가된다
 
 
 
