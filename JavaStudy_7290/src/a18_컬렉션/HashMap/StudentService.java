@@ -63,14 +63,37 @@ public class StudentService {
 		return result; //boolean 리턴
 	}
 	public void updateStudentByName(String name, String email, String address) {
+		if(studentMap.containsKey(name)) {
 		
+			if(isEmpty(email) && isEmpty(address)) {
+				System.out.println("수정할 정보가 없습니다");
+			}else {
+				Student student = studentMap.get(name);
+				if(isEmpty(email)) {
+				student.setEmail(email);
+				}else if(isEmpty(address)) {
+					student.setAddress(address);
+				}else {
+					student.setEmail(email);
+					student.setAddress(address);
+				}
+				System.out.println(name + "학생 정보가 수정되었습니다");
+			}
+		}else {
+			System.out.println(name + " 학생의 정보가 존재하지 않습니다");
+		}
 	}
 		
 
 	
 	//학생 정보 삭제
 	public void deleteStudentByName(String name) {
-		
+		if(studentMap.containsKey(name)) {
+			studentMap.remove(name);
+			System.out.println("학생 정보가 삭제되었습니다");
+		}else {
+			System.out.println(name + " 학생의 정보가 존재하지 않습니다");
+		}
 	}
 	
 	
