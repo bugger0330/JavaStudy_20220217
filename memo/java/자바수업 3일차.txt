@@ -1,0 +1,60 @@
+1. 깃허브 로그인
+
+2. sourcetree  설치
+https://www.sourcetreeapp.com/
+
+기존 소스트리 삭제 방법
+프로그램 추가/제거에서 삭제 후
+C:\Users\ITPS\AppData\Roaming\Atlassian
+C:\Users\ITPS\AppData\Local\Atlassian
+Atlassian 폴더 삭제
+
+다운로드 후 실행
+건너뛰기-2개 다 체크-다음-설치완료-다음-ITPS 랑 이메일 적는곳에
+깃허브에 사용한 닉네임과 깃허브 가입한 이메일주소 적기
+-다음-만약  ssh 키를 불러오시겠습니까? 라고 뜨면 아니오 누르면 실행된다
+
+3. 깃허브 new 프로젝트 만들기
+Repository name 적고
+public 선택-
+★★★Add a README file 꼭 체크★★★-완료
+
+4. 프로젝트의 초록색 code  눌러서 주소 복사후
+ㄱ. 소스트리의 clone선택-소스경로에 주소 붙여넣기-빈공간 클릭하면 밑에 자동적으로 글이 적힘
+두번째는 저장경로에 C:\junil\kangmin\workspace\git git폴더 만들고 선택
+
+중요@
+두번째 경로창에 
+C:\junil\kangmin\workspace\git\Git_Study_20220221라고 수정후 클론
+
+ㄴ. C:\junil\kangmin\workspace\git 폴더 가보면 Git_Study_20220221.git 폴더가 있는지 확인
+-폴더내에 .git숨김폴더와 README.md 확인
+.git폴더는 절대 삭제되면 안됨
+ 
+ㄷ. C:\junil\kangmin\workspace\git\Git_Study_20220221.git 폴더안에
+test.txt파일을 생성하고 내용에 test 라 적고
+소스트리에서 파일상태- test.txt를 모두 스테이지에 올리기(add) 선택-메모 입력-오른쪽 밑 커밋(컨트롤 엔터)-push
+
+commit 후 history에 origin/라는 것이 깃이다
+push를 눌러서 마무리(깃에 업로드)
+
+**순서 설명
+워킹 디렉토리(트리) add - 스테이지 commit - 히스토리(git)
+
+push 누르기 전에
+윈도우 시작-검색창에-자격증명 검색-자격증명관리자-윈도우 자격증명에 깃 관련 내용이 없어야 함
+소스트리-도구-옵션-인증에 계정 있으면 전부 삭제후 확인
+
+push 누르면 select 하라는 창이 뜨는데-manager-core 선택-토큰 입력창에 토큰 입력후 확인(밑에 토큰 사용방법 완료후 토큰 주소창을 입력)
+    select창이 안뜨고 무한 로딩중이면 도구-옵션-인증에 계정을 추가해야 한다
+
+토큰 사용방법
+깃허브 마이프로필-셋팅-왼쪽 맨밑에 디벨로퍼 셋팅-왼쪽 3번째 Personal access tokens 선택
+-토큰만들기 선택- Note에 제목- repo 선택-맨밑에 완료-토큰주소 복사후 어딘가에 메모해두기!!
+복사할때 맨 뒤에 스페이스바가 한칸 띄어질 경우가 있는데 스페이스바도 인식되니까 지워야함
+
+======집에서 할경우 소스트리-도구-옵션-인증-호스팅서비스에 깃허브 선택-HTTPS선택-새로고침-새창에서 선택-자동으로 사용자명 뜬다 녹색글자 뜨면 확인 manager-core 선택-푸쉬완료
+
+
+
+

@@ -1,0 +1,47 @@
+설치
+1.
+https://sites.google.com/view/kji-java/index 에서
+jdk11 버전 설치
+java 11.0.12 2021-07-20 LTS 버젼 사용함
+
+자바버젼 확인
+cmd 에서 java --version
+
+2.
+스프링 설치
+https://spring.io/ 
+
+Spring Tools 4.12.0
+https://download.springsource.com/release/STS4/4.12.0.RELEASE/dist/e4.21/spring-tool-suite-4-4.12.0.RELEASE-e4.21.0-win32.win32.x86_64.self-extracting.jar
+ 
+
+3.
+jdk 환경변수 설정
+https://prolite.tistory.com/975
+
+4. Spring Tools 4.12.0 실행 후 작업폴더 셋팅 후 실행완료
+=======================
+실행후
+1.윈도우-설정-검색창에  \encoding - 자바클래스파일 클릭후 utf-8, text클릭후 java로 시작하는건 전부 다 UTF-8로 변경, 왼쪽 워크스페이스 -  other-utf-8 선택
+
+2. 구글 검색 d2coding
+https://github.com/naver/d2codingfont
+
+D2Coding-Ver1.3.2-20180524.zip  1.3.2 배포 다운
+압축풀면 all  폴더의 파일 실행후 설치
+
+3.스프링 -윈도우-설정에서 검색창에  fonts - 밑에 text 2가지 글꼴을  d2coding로, 글자크기 설정 후 저장
+또는 컨트롤 + - 로 글자크기 설정
+
+
+
+
+
+
+
+
+
+
+
+
+

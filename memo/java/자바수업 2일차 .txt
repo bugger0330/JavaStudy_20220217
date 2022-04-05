@@ -1,0 +1,77 @@
+1. 상수는 무조건 첫글짜 대문자로 써야한다
+상수는 변하지 않는다
+
+double Pi=3.14  => 변수
+final double Pi=3.14 => 상수
+상수 선언시 앞에  final을 붙이고. 상수명은 첫글짜 대문자
+int 정수. double  실수(소수점)
+
+정수는 기본 int 로 되어있다
+정수 long를 쓰려면 숫자뒤에 (소/대 구분X) L을 써야 한다
+long a = 10000L;
+
+문자 -> 정수 -> 실수
+2바이트 -> 4바이트 -> 8바이트
+문자 ->정수 가능
+정수 -> 문자 불가능
+작은 물컵을 큰컵에 담는건 가능하지만
+큰컵에서 작은컵으로 담을땐 물이 넘친다
+예) 60.6 을 정수에 담으면 소수점이 사라진다
+double a=10.5;
+int b=10;  일때
+b=a 불가능 a=b 가능
+
+
+2. 
+char name1 = '강';
+char name2 = '민';
+System.out.println(name1 + name2); - 92177
+System.out.println("" + name1 + name2); - 강민
+
+왜냐하면 name1, name2는 문자열이 아니라 유니코드(숫자)로 저장되어 있어서
+그냥 더하면 유니코드 숫자끼리 덧셈이 일어난다
+앞에 "" + 를 붙이면 유니코드가 문자열로 변환된다
+
+
+3. 
+double kor = 80.5;
+double eng = 90.0;
+double math = 75.8;
+		
+double avg = 0; //평균
+double total = 0; //총합계
+int iAvg = 0;// 각각의 점수에서 소수점을 뺀 평균
+int iTotal = 0;//각각의 점수에서 소수점을 뺀 합계
+
+형변환을 해야 하니까
+iAvg = (int)kor + (int)eng + (int)math;
+iTotal = ((int)kor + (int)eng + (int)math)/3;
+변수 앞에 어떤 형으로 변환할지 (int) 등등 적어준다
+
+4. 구글검색에 백준
+https://www.acmicpc.net/
+알고리즘 문제
+15885899
+
+고양이 개 모양 출력
+a02_변수 => Cat.java
+
+5. 연산
+%는 나누고 남은 나머지
+10%3=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
